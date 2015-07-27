@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>MavenMultiRoot</groupId>
+	<artifactId>MavenMultiRoot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>MavenModule1</module>
+		<module>MavenModule2</module>
+	</modules>
+	<properties>
+
+	</properties>
+	<profiles>
+		<profile>
+			<id>p1</id>
+			<modules>
+				<module>MavenModule1</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>p2</id>
+			<modules>
+				<module>MavenModule2</module>
+			</modules>
+		</profile>
+	</profiles>
+</project>
